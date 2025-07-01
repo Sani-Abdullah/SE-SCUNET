@@ -99,11 +99,16 @@ Use `test/test.ipynb` to evaluate any trained model:
 
 ## 🧠 Models
 
-| Model                | Description                            | Params | Inference Time |
-|----------------------|----------------------------------------|--------|----------------|
-| scunet.ipynb         | Swin-Conv UNet                         | High   | Moderate       |
-| scunet-sae.ipynb     | SCUNet with SE blocks                  | High   | Moderate       |
-| scunet-mini-sae.ipynb| Lightweight SE-SCUNet-mini             | Low    | Fastest        |
+> 🔽 **Download trained models**:  
+> All trained model weights are available
+> [here](https://mega.nz/file/MNBRDBAT#7On3E3xZYb_mJe2dcR8Rn2QrdD-dwYmk8Yd2AeZ6of8).  
+> Please place the downloaded `.pth` files in the `checkpoints/` directory.
+
+| Model                  | Description                            | Params | Inference Time |
+|------------------------|----------------------------------------|--------|----------------|
+| scunet             | Swin-Conv UNet                         | High   | Moderate       |
+| se-scunet         | SCUNet with SE blocks                  | High   | Moderate       |
+| se-scunet-mini    | Lightweight SE-SCUNet-mini             | Low    | Fastest        |
 
 ---
 
@@ -120,13 +125,16 @@ The following table summarizes PSNR and SSIM performance on five standard benchm
 
 ### BUSI Dataset Performance
 
-| Dataset | Metric   | SCUNet | SE-SCUNet | SE-SCUNet-mini |
-|---------|----------|--------|-----------|----------------|
-| BUSI    | PSNR     | 32.82  | **33.91** | 33.84          |
-| BUSI    | SSIM     | 0.889  | **0.905** | **0.905**      |
-| BUSI    | Time (ms)| 7.30   | 7.30      | **4.68**       |
+| Dataset | Metric             | SCUNet   | SE-SCUNet | SE-SCUNet-mini |
+|---------|--------------------|----------|-----------|----------------|
+| BUSI    | PSNR (dB)          | 32.82    | **33.91** | 33.84          |
+| BUSI    | SSIM               | 0.889    | **0.905** | **0.905**      |
+| BUSI    | Inference (ms)     | 123.94   | 125.34    | **57.17**      |
+| BUSI    | FLOPs (G)          | 197.79   | 197.82    | **104.53**     |
+| BUSI    | Params (Millions)  | 9.651    | 9.661     | **4.871**      |
 
-> See Table 3 and Figure 14 in the paper for full results.
+
+> See Table 3, Figure 14 & 15 in the paper for full results.
 
 
 ---
