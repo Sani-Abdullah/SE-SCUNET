@@ -168,11 +168,11 @@ The following figures show qualitative denoising performance of SE-SCUNet-mini o
 If you use this code or reference this work, please cite:
 
 ```bibtex
-@article{shuaibu2024sescunet,
+@article{shuaibu2025sescunet,
   title={Hybrid CNN--Transformer with Channel Recalibration for Robust Despeckling in Real-Time Imaging},
   author={Shuaibu, Abdullahi Sani and Khan, Shujaat and Bello, Saheed A. and Guda, Blessed and Bennamoun, Mohammed},
   journal={Knowledge-Based Systems},
-  year={2024},
+  year={2025},
   note={Submitted}
 }
 ```
