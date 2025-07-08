@@ -101,12 +101,11 @@ Use `test/test.ipynb` to evaluate any trained model:
 
 > 🔽 **Download trained models**:  
 > All trained model weights are available
-> [here](https://mega.nz/file/MNBRDBAT#7On3E3xZYb_mJe2dcR8Rn2QrdD-dwYmk8Yd2AeZ6of8).  
+> [here](https://mega.nz/file/gIxnTSBS#eQWUGqchdRUtm7BDPN9SIVH659SwyKnRx59dukg0jZw).  
 > Please place the downloaded `.pth` files in the `checkpoints/` directory.
 
 | Model                  | Description                            | Params | Inference Time |
 |------------------------|----------------------------------------|--------|----------------|
-| scunet             | Swin-Conv UNet                         | High   | Moderate       |
 | se-scunet         | SCUNet with SE blocks                  | High   | Moderate       |
 | se-scunet-mini    | Lightweight SE-SCUNet-mini             | Low    | Fastest        |
 
